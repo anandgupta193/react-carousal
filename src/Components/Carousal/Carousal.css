@@ -1,8 +1,10 @@
 .carousal {
     display: flex;
+    height: inherit;
 }
 
 .carousal-next-arrow {
+    position: absolute;
     width: 20px;
     height: 20px;
     border: 2px solid;
@@ -12,16 +14,22 @@
     border-color: black;
     border-width: 2px;
     transform: rotate(45deg);
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    right: 2%;
+    margin: auto;
 }
 
 .carousal-content {
-    height: 20%;
+    position: relative;
     width: 100%;
-    border: 5px solid black;
-    background-color: burlywood;
+    border: 2px solid black;
+    background-color: darkgrey;
 }
 
 .carousal-prev-arrow {
+    position: absolute;
     width: 20px;
     height: 20px;
     border: 2px solid;
@@ -31,4 +39,23 @@
     border-color: black;
     border-width: 2px;
     transform: rotate(225deg);
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 2%;
+}
+
+.carousal-label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15%;
+}
+
+.carousal-desc {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5%;
 }

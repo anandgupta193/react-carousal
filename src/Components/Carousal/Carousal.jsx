@@ -24,14 +24,14 @@ function Carousal({ data }) {
 
 
     return (
-        <div className="carousal">
-            <div key={data[activeIndex].id} className="carousal-content">
+        <section className="carousal">
+            <section key={data[activeIndex].id} className="carousal-content">
                 <p className="carousal-next-arrow" onClick={onNext}></p>
-                <p>{data[activeIndex].label}</p>
-                <p>{data[activeIndex].desc}</p>
+                <label className="carousal-label">{data[activeIndex].label}</label>
+                <label className="carousal-desc">{data[activeIndex].desc}</label>
                 <p className="carousal-prev-arrow" onClick={onPrev}></p>
-            </div>
-        </div>
+            </section>
+        </section>
         );
 }
 
